@@ -1,0 +1,25 @@
+<div class="container card" *ngIf="hero">
+    <img src="assets/vingadores.jpeg">
+    
+      <h2>
+      OS VINGADORES {{hero.name}}
+    </h2>
+    <div>
+      <span>Id:</span>
+      {{hero.id}}
+    </div>
+    <div>
+      <span>Nome:</span>
+      {{hero.name}}
+    </div>
+    
+    <div>
+    
+       <label>Nome:</label>
+       <input [(ngModel)]="hero.name" />
+    
+    </div>
+    <!--
+      importar FormsModule em app.module.ts
+    -->
+    </div>
